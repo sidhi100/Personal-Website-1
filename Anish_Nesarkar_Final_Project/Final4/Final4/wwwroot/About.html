@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <style>
+        
+
+        body.dark-mode {
+            background-color:antiquewhite;
+        }
+
+        }
+
+        body.light-mode {
+            background-color: #eee;
+
+        }
+    </style>
+</head>
+<body id="body" class="dark-mode">
+    <header>
+        <nav style="background: #333;">
+            <ul style="list-style-type: none;padding: 0;display: flex;
+        justify-content: flex-start;">
+                <li>
+                    <a style="text-decoration: none;
+        text-align: center;
+        color: #fff;
+        display: block;
+        padding: 10px;" href="../">Home</a>
+                </li>
+                <li>
+                    <a style="text-decoration: none;
+        text-align: center;
+        color: #fff;
+        display: block;
+        padding: 10px;" href="About.html">About</a>
+                </li>
+                <li>
+                    <a style="text-decoration: none;
+        text-align: center;
+        color: #fff;
+        display: block;
+        padding: 10px;" href="../Home/SiteMap">Site Map</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div style="display:flex;justify-content:flex-end;margin-right:10px">
+        <button style="display:flex;justify-content:center;height:20px;width:50px;" onclick="toggle()">Theme</button>
+    </div>
+    <h1 style="text-align:center">About me</h1>
+
+
+    <div style="display:block;text-align:center;width:250px;height:250px;margin-left:410px">
+        <img style="display:block;text-align:center;" src="Anish photo.jpg" height="250" width="250" />
+
+    </div>
+    <div style="display:block;text-align:center;border-top:1px solid;box-shadow: inset 0 3px 0 0 cornflowerblue;">
+        <h3>Personal Information</h3>
+        <p>
+            My name is Anish. I am a Computer Science Graduate Student at Syracuse University.
+        </p>
+        <p>
+            A fascination for Science & Technology and keen interest in the ever-growing world of technology motivated me to take up engineering. I discovered my passion for electronics and computers quite early in life. Of all the subjects I studied, Embedded Systems and Programming attracted me like no other! Consequently, in my undergraduate degree in Electronics and Communication at PES Institute of Technology, I completed four major and two minor projects along with publishing an IEEE research paper in the domain.
+        </p>
+    </div>
+
+    <div style="display:block;text-align:center;border-top:1px solid;box-shadow: inset 0 3px 0 0 cornflowerblue;">
+        </">
+        <h3>Statement of Interest</h3>
+        <p>
+            I truly believe in expanding my mental horizons and detailed understanding of latest tools and technologies adopted by engineering, with the time. I want to learn technical, managerial as well as behavioral aspects of the field to work in higher positions. I strongly feel that master’s program will inculcate a strong quality assurance and testing component in my knowledge, so as to raise the level of excellence in my work. I know that an academic experience is must to have component for growth in global field of software engineering, as well as to make a mark in professional career. As a Software Engineer, on a day-to-day basis, I am inspired by translating ideas into a fragment of reality and have been influenced by the virtue of programming in a big way. Since the time I was introduced to this vast world of Computer Science, I have been working on various technologies like C#, C++, PYTHON, JAVASCRIPT, Web Technologies, Internet Of Things, and likewise.
+        </p>
+        <p>
+            My aspiration is to be a full stack software developer and I am looking forward to seeking a platform for the same.
+        </p>
+    </div>
+    <div style="display:block;text-align:center;border-top:1px solid;box-shadow: inset 0 3px 0 0 cornflowerblue;">
+        </">
+        <h3>Career Preference</h3>
+        <p>
+            As Software engineering encompasses the knowledge from different fields like computer engineering, computer science, mathematics, testing methodologies, quality management, project management etc. I came to a conclusion that career in software engineering can be very rewarding as there is demand for software engineers across the industries. Given my profound interest in programming and software development, I visualize my future as a system software developer working in top MNCs like Apple and Intel. I would like to work on exciting projects such as Autonomous driving systems or Mitigating and Degradation of Congested Sensor Networks. After gaining around ten years of experience, I would definitely grow into the role of a product manager in one of the above firms.
+        </p>
+    </div>
+
+    <script>
+        function toggle() {
+            var body = document.getElementById("body");
+            var currentClass = body.className;
+            body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+        }
+    </script>
+</body>
+</html>

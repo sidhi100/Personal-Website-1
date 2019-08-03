@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Final4.Models.Comment>
+@{
+    ViewData["Title"] = "View";
+}
+
+<div>
+    <img src="~/Images/wf_120314_LastWord_Comments680x300.jpg" height="400" width="1100" />
+</div>
+@if (User.IsInRole("User") || User.IsInRole("Admin"))
+{
+    <div style="display:flex;justify-content:flex-end">
+        <a asp-action="AddComment">Add Comment</a>
+    </div>
+}
+
+@foreach (var item in Model)
+{
+    <div style="display:block;border:2px solid red;border-radius:5px;margin-top:8px">
+        <div style="display:block;border-bottom:5px solid black;background-color:aliceblue"><h7>Section : @Html.DisplayFor(modelItem => item.CommentTopic)</h7></div>
+        <p>Comment : </p>
+        <div><p>@Html.DisplayFor(modelItem => item.CommentData)</p></div>
+        <a asp-action="DeleteComment" asp-route-id="@item.CommentId">Delete</a>
+
+    </div>
+}
+<div style="display:block;height:30px">
+</div>
+<footer style="bottom:0;width:100%;position:absolute;height:2.5rem;">
+    <a href="https://www.linkedin.com/in/anishnesarkar/" target="_blank"><img style="margin-top:7px;" src="~/Images/linkedlnImage.png" height="40" width="40" /></a>
+    <a href="https://www.facebook.com/anish.nkr" target="_blank"><img style="margin-top:7px;margin-left:7px" src="~/Images/facebook.png" height="40" width="40" /></a>
+    <a href="https://www.instagram.com/anish_nkr/?hl=en" target="_blank"><img style="margin-top:7px;margin-left:7px" src="~/Images/anish_nkr_nametag.png" height="40" width="40" /></a>
+    <a style="margin-left:75%" asp-controller="Home" asp-action="Index">Back</a>
+</footer>

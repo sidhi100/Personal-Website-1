@@ -1,0 +1,49 @@
+﻿@model Final4.Models.AcademicItem
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Add Academic Item";
+}
+
+
+<form asp-controller="Academics" asp-action="AddAcad" method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="input-group">
+        <label asp-for="AcademicName" class="input-group-btn"></label>
+        <input asp-for="AcademicName" class="form-control" />
+        <span asp-validation-for="AcademicName" class="text-danger"></span>
+    </div>
+    <div class="input-group">
+        <label asp-for="College" class="input-group-btn"></label>
+        <input asp-for="College" class="form-control" />
+        <span asp-validation-for="College" class="text-danger"></span>
+    </div>
+    <div class="input-group">
+        <label asp-for="Major" class="input-group-btn"></label>
+        <input asp-for="Major" class="form-control" />
+        <span asp-validation-for="Major" class="text-danger"></span>
+    </div>
+    <div class="input-group">
+        <label asp-for="CourseWork" class="input-group-btn"></label>
+        <input asp-for="CourseWork" class="form-control" />
+        <span asp-validation-for="CourseWork" class="text-danger"></span>
+    </div>
+    <div class="input-group">
+        <label asp-for="yearOfCompletion" class="input-group-btn"></label>
+        <input asp-for="yearOfCompletion" class="form-control" />
+        <span asp-validation-for="yearOfCompletion" class="text-danger"></span>
+    </div>
+    <div class="input-group">
+        <label asp-for="gpa" class="input-group-btn"></label>
+        <input asp-for="gpa" class="form-control" />
+        <span asp-validation-for="gpa" class="text-danger"></span>
+    </div>
+    <div class="input-group">
+        <label asp-for="AcadImage" class="input-group-btn"></label>
+        <input type ="file" asp-for="AcadImage" class="form-control" />
+        <span asp-validation-for="AcadImage" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Create" class="btn btn-primary" />
+    </div>
+</form>

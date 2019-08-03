@@ -1,0 +1,46 @@
+﻿
+@model IEnumerable<Final4.Models.Job>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Job View";
+
+}
+@if (User.IsInRole("Admin"))
+{
+    <div style="display:flex;justify-content:flex-end">
+        <a asp-action="AddJob">Add New Job</a>
+    </div>
+}
+<div style="display:flex;width:1200px; justify-content:space-around">
+    @foreach (var item in Model)
+    {
+
+        <div style="display:block;width:250px;height:100px;background-color:aquamarine;padding:70px 0;text-align:center">
+            <a asp-action="JobDetails" asp-route-id="@item.JobId">
+                @Html.DisplayFor(modelItem => item.Role)
+            </a>
+            @if (User.IsInRole("Admin"))
+            {
+                <p></p>
+                <span><                  </span>
+                <a asp-action="EditJob" asp-route-id="@item.JobId">Edit</a> <span> | </span>
+                <a asp-action="DeleteJob" asp-route-id="@item.JobId">Delete</a> <span> > </span>
+
+            }
+        </div>
+
+    }
+
+</div>
+
+<div style="display:block;height:30px">
+</div>
+
+<footer style="bottom:0;width:100%;position:absolute;height:2.5rem;">
+    <h5 style="text-align:center"><b><a asp-controller="Comments" asp-action="CommentView">Add Comments/Notes</a></b></h5>
+    <a href="https://www.linkedin.com/in/anishnesarkar/" target="_blank"><img style="margin-top:7px;" src="~/Images/linkedlnImage.png" height="40" width="40" /></a>
+    <a href="https://www.facebook.com/anish.nkr" target="_blank"><img style="margin-top:7px;margin-left:7px" src="~/Images/facebook.png" height="40" width="40" /></a>
+    <a href="https://www.instagram.com/anish_nkr/?hl=en" target="_blank"><img style="margin-top:7px;margin-left:7px" src="~/Images/anish_nkr_nametag.png" height="40" width="40" /></a>
+    <a style="margin-left:75%" asp-controller="Professional" asp-action="ProfessionalIndex">Back</a>
+</footer>
