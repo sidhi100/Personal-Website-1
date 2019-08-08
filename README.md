@@ -18,6 +18,42 @@ The site is built on **ASP .NET Core MVC** framework, **SQL Server** as database
 * Start the project in Debugging mode.
 
 ### File upload from Client to Server
+- - - -
 The Console Client uploads required files from client to the Server using the Web API. See below
-![](Screenshots/asp_personal_website.gif)
+![Client-Server Web API](Screenshots/asp_personal_website.gif)
 
+### Site Screenshots
+- - - -
+
+#### About Page
+![About Page](Screenshots/About.PNG)
+
+- - - -
+
+#### Academic Page
+![Academic Page](Screenshots/Academic.PNG)
+
+- - - -
+
+#### Professional Page
+![Professional Page](Screenshots/Internship.PNG)
+
+- - - -
+
+#### Project Page
+![Projects Page](Screenshots/project.PNG)
+
+- - - -
+
+#### Site Map Page
+![Site Map Page](Screenshots/SiteMap.PNG)
+
+- - - -
+
+#### Comments Page
+![Comments Page](Screenshots/comments.PNG)
+
+- - - -
+
+#### Downloads Page
+![Downloads Page](Screenshots/downloads.PNG)
