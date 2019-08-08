@@ -19,5 +19,5 @@ The site is built on **ASP .NET Core MVC** framework, **SQL Server** as database
 
 ### File upload from Client to Server
 The Console Client uploads required files from client to the Server using the Web API. See below
-![](ScreenShots/asp_personal_website.gif)
+![](Screenshots/asp_personal_website.gif)
 
