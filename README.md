@@ -10,7 +10,7 @@ The site is built on **ASP .NET Core MVC** framework, **SQL Server** as database
 * Rebuild the database and entity framework as follows:
   * Right Click on the Console client in the solution explorer and Unload the project.
   * Delete the Migrations folder
-  * Delete the database created in the SQL server. ( *No need to this when running the project for first time* )
+  * Delete the database created in the SQL server. ( *No need to do this when running the project for first time* )
   * Open package manager console. In powershell, type the command `add-migration Migrations' ( * This will create **Migrations** folder )
   * Type the command `update-database`. This will create a fresh database.
   * Right click the ConsoleClient project and Reload the project.
